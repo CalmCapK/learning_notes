@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-import torch as t
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
@@ -14,8 +14,8 @@ class DiabetesDataset(Dataset):
     def __init__(self):
         xy = np.loadtxt('data.csv', delimiter=',', dtype=np.float32)
         self.len = xy.shape[0]
-        self.x_data = Variable(t.from_numpy(xy[:, 0:-1]))
-        self.y_data = Variable(t.from_numpy(xy[:, [-1]]))
+        self.x_data = Variable(torch.from_numpy(xy[:, 0:-1]))
+        self.y_data = Variable(torch.from_numpy(xy[:, [-1]]))
 
     #return one item on the index
     def __getitem__(self, index):
@@ -31,41 +31,48 @@ train_loader = DataLoader(dataset=dataset,
                           shuffle=True,
                           num_workers=2)
 
-class Net(nn.Module):
+
+#x_data = Variable(torch.Tensor([[1.0],[2.0],[3.0],[4.0]]))
+x_data = Variable(torch.Tensor([[2.1, 0.1],[4.2, 0.8],[3.1, 0.9],[3.3, 0.2]]))
+y_data = Variable(torch.Tensor([[0.],[1.],[0.],[1.]]))
+
+class Model(torch.nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(3, 6, 5)
-        self.pool = nn.MaxPool2d(2, 2)
-        self.conv2 = nn.Conv2d(6, 16, 5)
-        self.fc1 = nn.Linear(16*5*5, 120)
-        self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 10)
+        super(Model, self).__init__()
+        self.l1 = torch.nn.Linear(8, 6)
+        self.l2 = torch.nn.Linear(6, 4)
+        self.l3 = torch.nn.Linear(4, 1)
+        self.sigmoid = torch.nn.Sigmoid()
 
     def forward(self, x):
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = x.view(-1, 16*5*5)
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        return x
+        out1 = self.sigmoid(self.l1(x))
+        out2 = self.sigmoid(self.l2(out1))
+        y_pred = self.sigmoid(self.l3(out2))
+        return y_pred
 
-net = Net()
-criterion = nn.CrossEntropyLoss()
-optimizer = t.optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+model = Model()
 
+#Cross Entropy loss
+criterion = torch.nn.BCELoss(size_average=True)#True 返回loss.mean() 否则返回loss.sum()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.1) #随机梯度下降
+
+#Training loop
 for epoch in range(2):
     running_loss = 0.0
-    for i, data in enumerate(train_loader, 0):
+    for i, data in enumerate(train_loader, 0):#分batch来训练
         inputs, labels = data
         inputs, labels = Variable(inputs), Variable(labels)
         print epoch, i, "inputs", inputs.data, "labels", labels.data
-
-        outputs = net(inputs)
-        loss = criterion(outputs, labels)
+        # forward pass
+        y_pred = model(inputs)
+        # loss
+        loss = criterion(y_pred, labels)
+        print epoch, i, loss.data, loss.item()
+        # zero gradients, perform a backward pass, updata weights
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+
 
         running_loss += loss.data[0]
         if i%2000 == 1999:
@@ -73,3 +80,4 @@ for epoch in range(2):
             running_loss = 0.0
 
 print 'Finished Training'
+

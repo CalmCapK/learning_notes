@@ -227,3 +227,4 @@ plt.ylabel('lost')
 plt.xlabel('w')
 plt.show()
 zip(x_list,y_list)
+

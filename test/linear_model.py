@@ -8,6 +8,26 @@ from torch.autograd import Variable
 x_data = [1.0, 2.0, 3.0]
 y_data = [2.0, 4.0, 6.0]
 
+
+
+'''
+import math
+import matplotlib.pyplot as plt
+z_data = list()
+m_data = list()
+
+for i in np.arange(-20.0, 20.0, 0.01):
+    z = 1.0/(1.0+math.e**(-i))
+    z_data.append(z)
+    print i,z
+    m_data.append(i)
+plt.plot(m_data, z_data)
+plt.ylabel('z')
+plt.xlabel('x')
+plt.show()
+'''
+
+
 w = Variable(torch.Tensor([1.0]), requires_grad=True)
 '''
 x = Variable(torch.ones(2), requires_grad=True)
