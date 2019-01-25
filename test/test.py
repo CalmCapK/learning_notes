@@ -1,12 +1,36 @@
 #!/user/bin/python
 # -*- coding: utf-8 -*-
 import numpy as np
+import sys
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
+'''
+# RNN 1
+h = [1, 0, 0, 0]
+e = [0, 1, 0, 0]
+l = [0, 0, 1, 0]
+o = [0, 0, 0, 1]
+
+cell = nn.LSTM(input_size=4, hidden_size=2, batch_first=True)
+#inputs = torch.autograd.Variable(torch.Tensor([[h, e, l, l, o]]))
+#inputs = torch.autograd.Variable(torch.Tensor([[h]]))
+inputs = torch.autograd.Variable(torch.Tensor([[h, e, l, l, o],
+                                               [e, o, l, l, l],
+                                               [l, l, e, e, l]
+                                               ]))
+print "input size", inputs.size()
+
+hidden = (torch.autograd.Variable(torch.randn(1, 3, 2)), torch.autograd.Variable(
+    torch.randn((1, 3, 2))))
+out, hidden = cell(inputs, hidden)
+print out.data
+'''
+
+
 '''
 x = np.array([[0,1,2],[3,4,5],[6,7,8],[9,10,11]])
 print x[:,0:-1]
@@ -52,6 +76,7 @@ for epoch in range(4):
 '''
 
 
+'''
 #model = nn.LogSoftmax()
 
 #model = nn.Softmax()
@@ -69,3 +94,4 @@ loss = criterion(pred, target)
 l2 = F.nll_loss(pred, target)
 print loss, l2
 loss.backward()
+'''

@@ -170,6 +170,22 @@ pip install sklearn
 
 pytorch.legacy.nn删除即可
 
+2018/12/24
+安装slicer
+sudo apt-get install subversion git-core git-svn
+sudo apt-get install make gcc g++ libx11-dev libxt-dev libgl1-mesa-dev libglu1-mesa-dev libfontconfig-dev libxrender-dev libncurses5-dev
+sudo apt-get install libosmesa6-dev
+
+sudo apt-get install cmake
+sudo apt-get install qt-sdk
+没有意义
+sudo apt-get install htop
+
+2019/1/20
+conda install tensorflow-gpu
+pip install -U tensorflow-gpu==1.8
+pip uninstall tensorflow-gpu==1.8
+conda install tensorflow-gpu==1.8
 --------
 基本命令
 
@@ -212,12 +228,22 @@ https://gw.ict.ac.cn
 https://gw.ict.ac.cn/srun_portal_pc.php?ac_id=1&url=http://www.msftconnecttest.com/redirect
 https://github.com/AaronJackson/vrn
 ssh zyke@10.29.150.70
+监控内存
+htop -d=0.1
+查看gpu信息
+lspci | grep -i vga
+nvidia-smi
 -------
+repos
 fwt
 树叶
 item()
 mkdir snapshot
 python train.py --t test -l 159
+
+Nonlinear_Face_3DMM
+TF_newop/compile_op_v2_sz224.sh 删除  -D_GLIBCXX_USE_CXX11_ABI=0
+安装 tf1.8
 ----------------------ML学习----------
 import numpy as np
 np.arange(0.0,  4.1, 0.1)
