@@ -186,6 +186,40 @@ conda install tensorflow-gpu
 pip install -U tensorflow-gpu==1.8
 pip uninstall tensorflow-gpu==1.8
 conda install tensorflow-gpu==1.8
+2019/2/17
+安装meshlab
+conda uninstall dlib
+pip install dlib
+
+2019/2/24 server
+conda install scikit-image
+pip install dlib
+py2_tf
+-----shao le
+boost 1.59.0
+anyqt 0.0.10
+cffi 1.11.5
+cuda80 1.0
+ninja 1.8.2
+pycparser 2.19
+PyMCubes 0.0.9
+pytorch 1.0.0
+skicki-learn 0.20.1
+sklearn 0.0
+torchvision 0.2.1
+-----duo le
+cairo 1.14.12
+ffmpeg 4.0
+freeglut 3.0..0
+graphite2 1.3.12
+harfbuzzz 1.8.8
+jasper 2.0.14
+libglu 9.0.0
+libopencv 3.4.2
+libopus 1.3
+pixman 0.34.0
+py-opencv 3.4.2
+
 --------
 基本命令
 
@@ -233,6 +267,181 @@ htop -d=0.1
 查看gpu信息
 lspci | grep -i vga
 nvidia-smi
+tmux
+ctrL+b z进入退出小窗口 
+ctrl+b n进入 p退出
+Ctrl+b pgup 上滚 q退出
+未知
+ffmpeg -i ../test_image/7.jpg
+
+ 9  cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c 
+   10  cat /proc/cpuinfo | grep physical | uniq -c 
+   11  cat /etc/issue | grep Linux
+   12  dmidecode | grep "Product Name"  
+   13  sudo dmidecode | grep "Product Name"  
+   14  dmesg | grep -i eth
+   15  cat /proc/version
+   16  uname -a
+   17  lsb_release -a
+   18  l
+   19  zyke@vipl:~$  getconf LONG_BIT
+   20  64
+   21  zyke@vipl:~$  cat /proc/cpuinfo | grep flags | grep ' lm ' | wc -l
+   22  32
+   23  zyke@vipl:~$ cat /etc/issue | grep Linux
+   24  zyke@vipl:~$ dmidecode | grep "Product Name"
+   25  /sys/firmware/dmi/tables/smbios_entry_point: Permission denied
+   26  /dev/mem: Permission denied
+   27  zyke@vipl:~$ sudo dmidecode | grep "Product Name"
+   28  [sudo] password for zyke:
+   29  zyke is not in the sudoers file.  This incident will be reported.
+   30  zyke@vipl:~$ dmesg | grep -i eth
+   31  [    1.869285] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.3.0-k
+   32  [    1.893016] igb 0000:05:00.0: added PHC on eth0
+   33  [    1.893017] igb 0000:05:00.0: Intel(R) Gigabit Ethernet Network Connection
+   34  [    1.893019] igb 0000:05:00.0: eth0: (PCI
+   35  l
+   36  zyke@vipl:~$  getconf LONG_BIT
+   37  64
+   38  zyke@vipl:~$  cat /proc/cpuinfo | grep flags | grep ' lm ' | wc -l
+   39  32
+   40  zyke@vipl:~$ cat /etc/issue | grep Linux
+   41  zyke@vipl:~$ dmidecode | grep "Product Name"
+   42  /sys/firmware/dmi/tables/smbios_entry_point: Permission denied
+   43  /dev/mem: Permission denied
+   44  zyke@vipl:~$ sudo dmidecode | grep "Product Name"
+   45  [sudo] password for zyke:
+   46  zyke is not in the sudoers file.  This incident will be reported.
+   47  zyke@vipl:~$ dmesg | grep -i eth
+   48  [    1.869285] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.3.0-k
+   49  [    1.893016] igb 0000:05:00.0: added PHC on eth0
+   50  [    1.893017] igb 0000:05:00.0: Intel(R) Gigabit Ethernet Network Connection
+   51  cat /proc/cpuinfo| grep "processor"| wc -l
+
+ 142  cat /usr/local/cuda/version.txt
+  143  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+
+  269  tmux -a
+  270  tmux --version
+  271  tmux -V
+  272  tmux a
+  273  ls
+  274  tmux a
+  275  wget https://raw.githubusercontent.com/Helicopt/linux-config/master/.vimrc
+  276  vim .vimrc 
+  277  vim ~/.tmux.conf
+
+ 289  git clone https://github.com:Helicopt/senseToolkit
+  290  git clone git@github.com:Helicopt/senseToolkit.git
+  291  ssh keygen
+  292  ls ~/.ssh/known_hosts 
+  293  ssh-keygen 
+  294  git clone git@github.com:Helicopt/senseToolkit.git
+  295  git clone https://github.com/Helicopt/senseToolkit.git
+  296  ls
+  297  cd senseToolkit/
+  298  python setup.py build install
+  299  python --help
+  300  python setup.py -u build install
+  301  python setup.py -h
+  302  python setup.py -u build
+  303  python setup.py build
+  304  ls
+  305  ls build/
+  306  python setup.py build install
+  307  python setup.py build install --install-dir=/home/zyke/.local/lib/python3.6/site-packages/
+  308  python setup.py build install --prefix=/home/zyke/.local/lib/python3.6/site-packages/
+  309  vim ~/.bashrc 
+  310  source ~/.bashrc 
+  311  python setup.py build install --prefix=/home/zyke/.local/
+  312  python
+  313  cd ..
+  314  ls
+  315  pyhton
+  316  fuck
+  317  conda install thefuck
+
+
+ conda list | grep cv
+
+ 370  nvidia-smi
+  371  swatch -n 0.5 nvidia-smi
+  372  watch -n 0.5 nvidia-smi
+  373  watch -n 0.1 nvidia-smi
+
+CUDA_VISIBLE_DEVICES=1 python demo.py -i ../test_image/ -o ../test_image/resultisDlib True
+  458  vim ~/.viminfo 
+  459  ls -laht ~/.viminfo 
+  460  chmod 664 ~/.viminfo 
+  461  ls -laht ~/.viminfo 
+  462  vim demo.py 
+  463  vim ~/.vimrc 
+  464  vim /etc/vim/vimrc
+ 476  spci | grep -i vga
+  477  lspci | grep -i vga
+  478  htop -d=0.1
+  479  tmux a
+ 503  ffmpeg -i ../test_image/7.jpg 
+ 650  watch "ls | grep _result.jpg | wc -l" 
+for i in `seq 0 5`; do python test_face.py ${i}_mes.txt; done  
+ sudo apt-get install filezilla
+ rsync zyke@10.29.150.70:/home/zyke/repos/test_image_old/result.avi ./result2.avi 
+ eog result.jpg
+
+ 476  spci | grep -i vga                                                                             │
+  477  lspci | grep -i vga  
+
+vim ~/.viminfo                                                                                 │
+  459  ls -laht ~/.viminfo                                                                            │
+  460  chmod 664 ~/.viminfo                                                                           │
+  461  ls -laht ~/.viminfo                                                                            │
+  462  vim demo.py                                                                                    │
+  463  vim ~/.vimrc                                                                                   │
+  464  vim /etc/vim/vimrc                                                                             │
+  465  vim ~/.vimrc                                                                                   │
+  466  vim demo.py                                                                                    │
+  467  git diff                                                                                       │
+  468  CUDA_VISIBLE_DEVICES=2 python demo.py -i ../test_image/ -o ../test_image/result --isDlib True  │
+  469  python demo.py -i ../test_image/ -o ../test_image/result --isDlib True --gpu=2    
+
+
+ 476  spci | grep -i vga
+  477  lspci | grep -i vga
+  478  htop -d=0.1
+  479  tmux a
+  480  tmux
+  481  htop
+  482  watch -n 0.5 nvidia-smi
+
+  490  python -m senseTk.apps.VI ../video2image/result result.avi
+  491  python -m senseTk.apps.VI ../video2image/result2 result.avi
+
+  vim demo.py 
+  456  git status
+  457  vim demo.py 
+  458  vim ~/.viminfo 
+  459  ls -laht ~/.viminfo 
+  460  chmod 664 ~/.viminfo 
+  461  ls -laht ~/.viminfo 
+  462  vim demo.py 
+  463  vim ~/.vimrc 
+  464  vim /etc/vim/vimrc
+  465  vim ~/.vimrc 
+  466  vim demo.py 
+  467  git diff
+  468  CUDA_VISIBLE_DEVICES=2 python demo.py -i ../test_image/ -o ../test_image/result --isDlib True
+  469  python demo.py -i ../test_image/ -o ../test_image/result --isDlib True --gpu=2
+  470  ls
+  471  cd repos/
+  472  ls
+  473  git clone https://github.com/YadiraF/PRNet.git
+  474  clear
+  475  ls
+  476  spci | grep -i vga
+  477  lspci | grep -i vga
+  478  htop -d=0.1
+  479  tmux a
+
 -------
 repos
 fwt
