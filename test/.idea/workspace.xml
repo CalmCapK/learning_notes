@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d559a2a0-1827-483e-8602-a4216533714e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/process_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kzy_note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../kzy_note.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cifar10.py" beforeDir="false" afterPath="$PROJECT_DIR$/cifar10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/logistic_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
@@ -49,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="198">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="e#43#61#0" expanded="true" />
               </folding>
@@ -62,87 +59,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/language_rnn.py">
+        <entry file="file://$PROJECT_DIR$/process_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="116" column="40" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="40" />
+            <state relative-caret-position="754">
+              <caret line="179" selection-start-line="179" selection-end-line="179" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_math.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello_rnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="42" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cifar10.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mnist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="149" column="3" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="62" />
-              <folding>
-                <element signature="e#56#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistic_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linear_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="56" />
-              <folding>
-                <element signature="e#56#68#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,7 +98,6 @@
         <option value="$PROJECT_DIR$/mnist.py" />
         <option value="$PROJECT_DIR$/logistic_regression.py" />
         <option value="$PROJECT_DIR$/linear_model.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/hello_rnn_seq.py" />
         <option value="$PROJECT_DIR$/hello_rnn_emb.py" />
         <option value="$PROJECT_DIR$/rnn_classifier.py" />
@@ -185,14 +106,16 @@
         <option value="$PROJECT_DIR$/hello_rnn.py" />
         <option value="$PROJECT_DIR$/language_rnn.py" />
         <option value="$PROJECT_DIR$/test_math.py" />
+        <option value="$PROJECT_DIR$/process_data.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="371" />
-    <option name="y" value="102" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="215" />
+    <option name="y" value="61" />
+    <option name="width" value="1591" />
+    <option name="height" value="940" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,7 +149,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nonlinear_Face_3DMM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -408,16 +331,17 @@
       <workItem from="1545394367709" duration="25777000" />
       <workItem from="1545640100416" duration="312000" />
       <workItem from="1546430251975" duration="27781000" />
+      <workItem from="1552463414091" duration="8200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62848000" />
+    <option name="totallyTimeSpent" value="71048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="61" y="-4" width="1859" height="1084" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19525649" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19702807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -428,20 +352,31 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32952183" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002752" side_tool="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49972484" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.24710424" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.24656026" />
       <window_info anchor="right" id="Database" order="4" weight="0.3298969" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/process_data.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/diabetes.py">
@@ -451,46 +386,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cifar10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/linear_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1189">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linear_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="e#56#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logistic_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="149" column="3" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="62" />
-          <folding>
-            <element signature="e#56#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rnn_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="1824">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
@@ -537,7 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="1392">
           <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="42" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
@@ -545,22 +446,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/language_rnn.py">
+    <entry file="file://$PROJECT_DIR$/cifar10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="116" column="40" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="40" />
+        <state relative-caret-position="960">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3384">
+          <caret line="151" column="3" selection-start-line="158" selection-start-column="54" selection-end-line="158" selection-end-column="62" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#56#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="312">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linear_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="56" />
           <folding>
-            <element signature="e#43#61#0" expanded="true" />
+            <element signature="e#56#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -568,7 +483,37 @@
     <entry file="file://$PROJECT_DIR$/test_math.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="116" column="40" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

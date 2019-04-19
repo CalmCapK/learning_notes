@@ -127,7 +127,7 @@ class InceptionANet(nn.Module):
         x = self.incept2(x)
         x = x.view(in_size, -1)
         x = self.fc(x)
-        return F.log_softmax(x)
+        return F.softmax(x)
 
 
 
@@ -140,6 +140,8 @@ def train(epoch):
         data, target = Variable(data), Variable(target)
         optimizer.zero_grad()
         output = model(data)
+        print(output)
+        print(target)
         loss = F.nll_loss(output, target)
         loss.backward()
         optimizer.step()
