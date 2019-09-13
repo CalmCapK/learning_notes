@@ -1,5 +1,9 @@
 anaconda 配置环境变量
 cuda
+cudnn
+tar -xzvf cudnn-8.0-linux-x64-v5.1.tgz
+chmod a+r
+cp
 nvidia
 torchvision
 ------------
@@ -50,6 +54,8 @@ pip install --user dlib matplotlib numpy visvis imageio
 pip install -U numpy 
 
 多版本cuda切换
+rm -rf /usr/local/cuda#删除之前创建的软链接
+sudo ln -s /usr/local/cuda-8.0/ /usr/local/cuda/
 https://blog.csdn.net/Maple2014/article/details/78574275
 
 2018/12/18
@@ -240,7 +246,7 @@ py-opencv 3.4.2
 安装了ngrok 和ngrok2
 安装了zerotier
 安装了holer
-2019/3/14
+2019/3/14i
 安装slicer
 问题error: Failed to obtain launcher executable name !
 sudo apt-get install subversion git-core git-svn
@@ -279,16 +285,32 @@ sudo apt-get install make gcc g++ libx11-dev libxt-dev libgl1-mesa-dev libglu1-m
 pcl 安装 cuda 不用在安装driver
 
 2019/4/19
-pcl 
+pcl server
 shift 右键
 sh->bash  sudo dpkg-reconfigure dash
 sudo ln -fs /bin/bash /bin/sh
-tmux 
+tmux  http://mingxinglai.com/cn/2012/09/tmux/
+/userhome/.tmux.conf
 set -g prefix C-a
 unbind C-b
+C+b: source-file /userhome/.tmux.conf
 vim 在tmux 下可以正常使用
+conda 安装在/userhome
+cuda 安装在/userhome   cudnn
+conda install tensorflow-gpu==1.8
+conda install scikit-image
+pip install dlib（不在）
+conda install --channel https://conda.anaconda.org/menpo opencv
+
+2019/5/23
+zky server
+运行 face3d
 --------
 基本命令
+git add .
+git commit -m ""
+git push origin master
+
 
 sudo apt-get remove
 
@@ -313,6 +335,7 @@ linux版本
 lsb_release -a
 
 查看cuda
+nvcc -V
 cat /usr/local/cuda/version.txt
 查看cudnn
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
@@ -338,6 +361,7 @@ htop -d=0.1
 查看gpu信息
 lspci | grep -i vga
 nvidia-smi
+watch -n 0.1 nvidia-smi
 tmux
 ctrL+b z进入退出小窗口 
 ctrl+b n进入 p退出
@@ -355,6 +379,10 @@ python train.py --t test -l 159
 Nonlinear_Face_3DMM
 TF_newop/compile_op_v2_sz224.sh 删除  -D_GLIBCXX_USE_CXX11_ABI=0
 安装 tf1.8
+
+PRNET 
+问题：AttributeError: 'module' object has no attribute 'LINE_AA'   
+改成cv2.CV_AA 
 ----------------------ML学习----------
 import numpy as np
 np.arange(0.0,  4.1, 0.1)
